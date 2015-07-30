@@ -255,7 +255,7 @@ public class Entities {
 
             if (outMap.containsKey(character)) {
                 // dupe, prefer the lower case version
-                if (name.toLowerCase().equals(name))
+                if (name.equals(name))
                     outMap.put(character, name);
             } else {
                 outMap.put(character, name);
