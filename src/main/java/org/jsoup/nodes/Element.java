@@ -601,7 +601,7 @@ public class Element extends Node {
      */
     public Elements getElementsByTag(String tagName) {
         Validate.notEmpty(tagName);
-        tagName = tagName.toLowerCase().trim();
+        tagName = tagName.trim();
 
         return Collector.collect(new Evaluator.Tag(tagName), this);
     }
@@ -650,7 +650,7 @@ public class Element extends Node {
      */
     public Elements getElementsByAttribute(String key) {
         Validate.notEmpty(key);
-        key = key.trim().toLowerCase();
+        key = key.trim();
 
         return Collector.collect(new Evaluator.Attribute(key), this);
     }
